@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ .header{
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 10px 20px;
+    /* font-size: 2.5em; */
+ }
+.header h1{
+    padding-top: 15px;
+    
+    font-size: 3em;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px; 
+    padding-top: 25px;
+    font-size: 3em;
+}
+ul li:hover{
+    color: blue;
+    border-bottom: 3px solid blue;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+.header i{
+    padding-top: 20px;
+    display: none;
+
+}
+
+/* section2 */
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 30px;
+}
+.hero .left{
+    width: 450px;
+    /* transform: translatex(300px);
+    transform: translatey(500px); */
+}
+.hero .left h1{
+    
+    font-size: 3em;
+    color: blue;
+    padding-bottom: 50px;
+}
+.hero .left button{
+    width: 50%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}
+
+.hero .right img{
+    width: 50%;
+}
+.hero .right img:hover{
+    /* transform: scale(1.4); */
+    transform: rotate(90deg);
+}
+
+.box{
+    width: 30%;
+    height: 300px;
+    margin: 50px 100px;
+    background-color: blue;
+    transform: skew(3gg0deg);
+}
+
+
+@media(max-width: 391px){
+    ul{
+        display: none;
+    }
+
+    .header{
+        padding: 10px 15px;
+    }
+
+    .header i{
+        font-size: 3em;
+        display: block;
+    }
+    .hero{
+        display: block;
+        padding-top: 0;
+        margin: 30px 20px;
+    }
+    .hero .left{
+        width: 100%;
+    }
+    .hero .right img{
+        margin-top: 50px;
+        margin-left: 100px;
+
+    }
+}
+
+/* big smart phone */
+
+@media(min-width: 392px) and (max-width: 450px){
+    .header{
+        padding-right: 100px;
+    }
+    ul{
+        display: none;
+    }
+    .header h1{
+        font-size: 4em;
+    }
+    .header i{
+        display: block;
+        font-size: 3.5em;
+        margin-left: 150px;
+    }
+    .hero{
+        display: block;
+        margin: 0 30px;
+    }
+    .hero .left{
+        width: 100%;
+    }
+    .hero .left button{
+        width: 60%;
+        font-size: 2em;
+    }
+    .hero .right img{
+        margin: 30px 70px;
+    }
+}
